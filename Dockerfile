@@ -23,5 +23,6 @@ RUN gem install whenever
 RUN mkdir /app
 WORKDIR /app
 ADD schedule.rb /app/config/schedule.rb
+ADD jobs /app/jobs
 
 RUN whenever --update-crontab
